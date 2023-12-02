@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46678DBE2B1BC8B0002909D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467D792C2B16862700558AA3 /* Assets.xcassets */; };
 		467D79292B16861E00558AA3 /* GoodStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D79282B16861E00558AA3 /* GoodStoreApp.swift */; };
 		467D792B2B16861E00558AA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D792A2B16861E00558AA3 /* ContentView.swift */; };
-		467D792D2B16862700558AA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467D792C2B16862700558AA3 /* Assets.xcassets */; };
 		467D79302B16862700558AA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467D792F2B16862700558AA3 /* Preview Assets.xcassets */; };
 		467D79392B16883400558AA3 /* ItemListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D79382B16883400558AA3 /* ItemListing.swift */; };
 		467D793C2B168C9800558AA3 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D793B2B168C9800558AA3 /* ItemListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46678DC02B1BCB5C002909D1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		467D79252B16861E00558AA3 /* GoodStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467D79282B16861E00558AA3 /* GoodStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodStoreApp.swift; sourceTree = "<group>"; };
 		467D792A2B16861E00558AA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,11 +38,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46678DBF2B1BCB5C002909D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46678DC02B1BCB5C002909D1 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		467D791C2B16861E00558AA3 = {
 			isa = PBXGroup;
 			children = (
 				467D79272B16861E00558AA3 /* GoodStore */,
 				467D79262B16861E00558AA3 /* Products */,
+				46678DBF2B1BCB5C002909D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,8 +159,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46678DBE2B1BC8B0002909D1 /* Assets.xcassets in Resources */,
 				467D79302B16862700558AA3 /* Preview Assets.xcassets in Resources */,
-				467D792D2B16862700558AA3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
