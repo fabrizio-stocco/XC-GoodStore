@@ -27,12 +27,12 @@ class ItemListViewModel: ObservableObject {
         database.delete(withRecordID: recordId) { deletedRecordId, error in
             if let error = error {
                 print(error)
+                self.popolateItems()
             } else {
                 self.popolateItems()
             }
         }
     }
-    
     
     func saveItem(title: String, price: Decimal) {
         let record = CKRecord(recordType: RecordType.itemListing.rawValue)

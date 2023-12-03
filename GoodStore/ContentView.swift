@@ -30,23 +30,18 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            
             VStack {
                 TextField("Enter Title", text: $title).textFieldStyle(.roundedBorder)
                 TextField("Enter Price", text: $price).textFieldStyle(.roundedBorder)
                 
                 Button("Save") {
                     guard let price = try? Decimal(price, format: .number) else { return }
-                    
                     vm.saveItem(title: title, price: price)
-                    
                     self.title = ""
                     self.price = ""   
                 }.disabled(title.trimmingCharacters(in: .whitespaces).isEmpty ||
                            price.trimmingCharacters(in: .whitespaces).isEmpty)
-                
                 Spacer()
-                
                 List {
                     ForEach(vm.items, id: \.recordID) { item in
                         HStack {
@@ -54,17 +49,13 @@ struct ContentView: View {
                             Spacer()
                             Text ("$" + String(describing: item.price))
                         }
-                        
                     }.onDelete(perform: deleteItem)
-                }
-                
-                    .navigationTitle("Good Store")
+                }.navigationTitle("Good Store")
             }.padding()
                 .onAppear {
                     vm.popolateItems()
                 }
-            
-        }
+        }.navigationViewStyle(.stack)
     }
 }
 
