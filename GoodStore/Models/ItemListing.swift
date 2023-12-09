@@ -2,7 +2,7 @@
 //  ItemListing.swift
 //  GoodStore
 //
-//  Created by MacAdmin on 28/11/23.
+//  Created by Fabrizio Giuliano Stocco Ver 17.001.1 December 9th 2023
 //
 
 import Foundation
