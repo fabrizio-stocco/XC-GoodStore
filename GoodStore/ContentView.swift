@@ -67,7 +67,7 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView(vm: ItemListViewModel(container: CKContainer.default()))
-}
+//#Preview {
+//    ContentView(vm: ItemListViewModel(container: CKContainer.default()))
+//}
 
