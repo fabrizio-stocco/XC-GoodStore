@@ -2,7 +2,7 @@
 //  GoodStoreApp.swift
 //  GoodStore
 //
-//  Created by Fabrizio Giuliano Stocco Ver 24.001.1 January 12nd 2024
+//  Created by Fabrizio Giuliano Stocco Ver 24.002.1 20240224
 //
 
 import SwiftUI
